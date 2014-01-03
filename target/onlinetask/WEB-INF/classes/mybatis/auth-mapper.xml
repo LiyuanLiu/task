@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.online.mapper.AuthMapper">
+    <resultMap id="userMapping" type="com.online.common.model.User">
+        <id column="id" property="id" javaType="long"/>
+        <result column="user_code" property="userCode" javaType="String"/>
+    </resultMap>
+
+    <select id="getUserExists" parameterType="map" resultType="int" >
+        select count(id) from tf_f_user where user_name = #{userName} and user_password = #{userPassword}
+    </select>
+
+    <select id="getUserByName" parameterType="String" resultMap="userMapping" >
+        select id, user_code, user_name, user_password, create_date, update_date,user_type,
+                create_staff_code, status
+          from tf_f_user
+         where status = '1' and user_name = #{userName}
+    </select>
+</mapper>

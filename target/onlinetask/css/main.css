@@ -1,0 +1,525 @@
+/***********************************************/
+/* emx_nav_left.css                            */
+/* Use with template Halo_leftNav.html         */
+/***********************************************/
+
+/***********************************************/
+/* HTML tag styles                             */
+/***********************************************/
+body{
+    font-family: Arial,sans-serif;
+    color: #333333;
+    line-height: 1.166;
+    margin: 0px;
+    padding: 0px;
+    background: #cccccc url(../images/bg_grad.jpg) fixed;
+}
+
+/******* hyperlink and anchor tag styles *******/
+
+a:link, a:visited{
+    color: #005FA9;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/************** header tag styles **************/
+
+h1{
+    font: bold 120% Arial,sans-serif;
+    color: #334d55;
+    margin: 0px;
+    padding: 0px;
+}
+
+h2{
+    font: bold 114% Arial,sans-serif;
+    color: #006699;
+    margin: 0px;
+    padding: 0px;
+}
+
+h3{
+    font: bold 100% Arial,sans-serif;
+    color: #334d55;
+    margin: 0px;
+    padding: 0px;
+}
+
+h4{
+    font: 100% Arial,sans-serif;
+    color: #333333;
+    margin: 0px;
+    padding: 0px;
+}
+
+h5{
+    font: 100% Arial,sans-serif;
+    color: #334d55;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/*************** list tag styles ***************/
+
+ul{
+    list-style-type: square;
+}
+
+ul ul{
+    list-style-type: disc;
+}
+
+ul ul ul{
+    list-style-type: none;
+}
+
+/********* form and related tag styles *********/
+
+form {
+    margin: 0;
+    padding: 0;
+}
+
+label{
+    font: bold 1em Arial,sans-serif;
+    color: #334d55;
+}
+
+input{
+    font-family: Arial,sans-serif;
+}
+
+/***********************************************/
+/* Layout Divs                                 */
+/***********************************************/
+#pagecell1{
+    position:absolute;
+    top: 112px;
+    left: 2%;
+    right: 2%;
+    width:95.6%;
+    background-color: #ffffff;
+}
+
+#tl {
+    position:absolute;
+    top: -1px;
+    left: -1px;
+    margin: 0px;
+    padding: 0px;
+    z-index: 100;
+}
+
+#tr {
+    position:absolute;
+    top: -1px;
+    right: -1px;
+    margin: 0px;
+    padding: 0px;
+    z-index: 100;
+}
+
+#masthead{
+    position: absolute;
+    top: 0px;
+    left: 2%;
+    right: 2%;
+    width:95.6%;
+
+}
+
+#pageNav{
+    float: left;
+    width:178px;
+    padding: 0px;
+    background-color: #F5f7f7;
+    border-right: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    font: small Verdana,sans-serif;
+}
+
+#content{
+    padding: 0px 10px 0px 0px;
+    margin:0px 0px 0px 178px;
+    border-left: 1px solid #ccd2d2;
+}
+
+
+/***********************************************/
+/* Component Divs                              */
+/***********************************************/
+#siteName{
+    margin: 0px;
+    padding: 16px 0px 8px 0px;
+    color: #ffffff;
+    font-weight: normal;
+}
+
+/************** info styles *****************/
+
+#info{
+    font: 75% Verdana,sans-serif;
+    position: absolute;
+    top: 16px;
+    right: 0px;
+    color: #919999;
+}
+
+#info a{
+    color: #ffffff;
+}
+
+#info a:hover{
+    text-decoration: underline;
+}
+
+/************** pageName styles ****************/
+
+#pageName{
+    padding: 0px 0px 14px 10px;
+    margin: 0px;
+    border-bottom:1px solid #ccd2d2;
+}
+
+#pageName h2{
+    font: bold 175% Arial,sans-serif;
+    color: #000000;
+    margin:0px;
+    padding: 0px;
+}
+
+#pageName img{
+    position: absolute;
+    top: 0px;
+    right: 6px;
+    padding: 0px;
+    margin: 0px;
+}
+
+/************* globalNav styles ****************/
+
+#globalNav{
+    position: relative;
+    width: 100%;
+    min-width: 640px;
+    height: 32px;
+    color: #cccccc;
+    padding: 0px;
+    margin: 0px;
+    background-image: url(../images/glbnav_background.gif);
+}
+
+#globalNav img{
+    margin-bottom: -4px;
+
+}
+
+#gnl {
+    position: absolute;
+    top: 0px;
+    left:0px;
+}
+
+#gnr {
+    position: absolute;
+    top: 0px;
+    right:0px;
+}
+
+#globalLink{
+    position: absolute;
+    top: 6px;
+    height: 22px;
+    min-width: 640px;
+    padding: 0px;
+    margin: 0px;
+    left: 10px;
+    z-index: 100;
+}
+
+
+a.glink, a.glink:visited{
+    font-size: small;
+    color: #000000;
+    font-weight: bold;
+    margin: 0px;
+    padding: 2px 5px 4px 5px;
+    border-right: 1px solid #8FB8BC;
+}
+
+a.glink:hover{
+    background-image: url(../images/glblnav_selected.gif);
+    text-decoration: none;
+}
+
+.skipLinks {display: none;}
+
+.bodyStyle {
+    font-family: Arial,sans-serif;
+    color: #333333;
+    line-height: 1.166;
+    margin: 0px;
+    padding: 0px;
+    background: #cccccc url(../images/bg_grad.jpg) fixed;
+}
+
+.leftImg {
+    float:left;
+    height: 490px;
+    width:600px;
+    margin:10px 10px 15px 10px;
+    padding: 10px 10px 10px 10px;
+    background-color: #cccccc;
+}
+
+.loginForm {
+    height: 400px;
+    text-align: center;
+    width: 450px;
+    float: left;
+    margin:70px 0px 0px 75px;
+    border:1px solid #ccd2d2;
+}
+.logo_box { width:398px; margin:0px auto;}
+.logo_content{ background:url(../images/logo_bg.png) no-repeat; height:382px;}
+.logo_ul{ padding-top:167px; padding-left:64px;}
+.logo_ul li{ width:261px; height:34px;
+    border:1px solid #DDDDDD;
+    background-color:#ffffff;
+    margin-bottom:19px;}
+.logo_ul li input{width:214px;
+    height:34px;
+    line-height:34px;
+    +height:33px; +line-height:33px;_height:33px; _line-height:33px;
+    border:0; background-color:#ffffff;
+    background-image:url(../images/logo_name.jpg);background-repeat: no-repeat;
+    background-position:left 0px;+background-position:left -2px; padding-left:47px;}
+.logo_ul li input.logo_password{background-image:url(../images/logo_password.jpg);}
+.logo_ul li.logo_click { border:1px solid #df6060;}
+.logo_submit { padding:0px 0px 110px 132px;}
+.logo_submit a{ display:block; background:url(../images/logo_submit.jpg) no-repeat; height:36px; width:126px;}
+
+/************ subglobalNav styles **************/
+
+.subglobalNav{
+    position: absolute;
+    top: 84px;
+    left: 0px;
+    /*width: 100%;*/
+    min-width: 640px;
+    height: 20px;
+    padding: 0px 0px 0px 10px;
+    visibility: hidden;
+    color: #ffffff;
+}
+
+.subglobalNav a:link, .subglobalNav a:visited {
+    font-size: 80%;
+    color: #ffffff;
+}
+
+.subglobalNav a:hover{
+    color: #cccccc;
+}
+
+/*************** search styles *****************/
+
+#search{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    z-index: 101;
+}
+
+#search input{
+    font-size: 70%;
+    margin: 0px  0px 0px 10px;
+}
+
+#search a:link, #search a:visited {
+    font-size: 80%;
+    font-weight: bold;
+
+}
+
+#search a:hover{
+    margin: 0px;
+}
+
+
+/************* breadCrumb styles ***************/
+
+#breadCrumb{
+    padding: 5px 0px 5px 10px;
+    font: small Verdana,sans-serif;
+    color: #AAAAAA;
+}
+
+#breadCrumb a{
+    color: #AAAAAA;
+}
+
+#breadCrumb a:hover{
+    color: #005FA9;
+    text-decoration: underline;
+}
+
+
+/************** feature styles *****************/
+
+.feature{
+    padding: 0px 0px 10px 10px;
+    font-size: 80%;
+    min-height: 200px;
+    height: 200px;
+}
+html>body .feature {height: auto;}
+
+.feature h3{
+    font: bold 175% Arial,sans-serif;
+    color: #000000;
+    padding: 30px 0px 5px 0px;
+}
+
+.feature img{
+    float: left;
+    padding: 0px 10px 0px 0px;
+}
+
+
+/*************** story styles ******************/
+
+.story {
+    padding: 10px 0px 0px 10px;
+    font-size: 80%;
+}
+
+.story h3{
+    font: bold 125% Arial,sans-serif;
+    color: #000000;
+}
+
+.story p {
+    padding: 0px 0px 10px 0px;
+}
+
+.story a.capsule{
+    font: bold 1em Arial,sans-serif;
+    color: #005FA9;
+    display:block;
+    padding-bottom: 5px;
+}
+
+.story a.capsule:hover{
+    text-decoration: underline;
+}
+
+td.storyLeft{
+    padding-right: 12px;
+}
+
+
+/************** siteInfo styles ****************/
+
+#siteInfo{
+    clear: both;
+    border-top: 1px solid #cccccc;
+    font-size: small;
+    color: #cccccc;
+    padding: 10px 10px 10px 10px;
+    margin-top: 0px;
+}
+
+#siteInfo img{
+    padding: 4px 4px 4px 0px;
+    vertical-align: middle;
+}
+
+
+/************ sectionLinks styles **************/
+
+#sectionLinks{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+#sectionLinks h3{
+    padding: 10px 0px 2px 10px;
+    border-bottom: 1px solid #cccccc;
+}
+
+#sectionLinks a:link, #sectionLinks a:visited {
+    display: block;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #cccccc;
+    background-image: url(../images/bg_nav.jpg);
+    font-weight: bold;
+    padding: 3px 0px 3px 10px;
+    color: #21536A;
+}
+
+#sectionLinks a:hover{
+    border-top: 1px solid #cccccc;
+    background-color: #DDEEFF;
+    background-image: none;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/************* relatedLinks styles **************/
+
+.relatedLinks{
+    margin: 0px;
+    padding: 0px 0px 10px 10px;
+    border-bottom: 1px solid #cccccc;
+}
+
+.relatedLinks h3{
+    padding: 10px 0px 2px 0px;
+}
+
+.relatedLinks a{
+    display: block;
+}
+
+
+/**************** advert styles *****************/
+
+#advert{
+    padding: 10px;
+}
+
+#advert img{
+    display: block;
+}
+
+/********************* end **********************/
+
+.invalid_validate_class {background-color: #ffffb9}
+a, a:link, a:visited {color:#333;}
+img {border: 0;}
+
+.slideBox {float: left; margin: 0 auto; margin-top: 50px; width: 600px; height: 490px;}
+.slideBox .slide,
+.slideBox .slide a.pic,
+.slideBox .slide a.pic img {width: 600px; height: 450px;}
+.slideBox .slide {position: absolute; z-index: 0;}
+.slideBox .slide01 {z-index: 1;}
+.slideBox .slide a.pic,
+.slideBox .slide span.txt {display: block;}
+.slideBox .slide img {}
+.slideBox .slide span.txt {position: absolute; bottom: 0; left: 0; width: 600px; height: 40px; background: #000; filter: alpha(opacity: 60); background: rgba(0, 0, 0, 0.6); text-indent: 20px; line-height: 38px;}
+.slideBox .slide span.txt a {text-decoration: none; color: #fff; font: 16px arial;}
+.slideBox .slide span.txt a:hover {text-decoration: underline;}
+
+.slideBox .btns {position: relative; list-style: none; bottom: 11px; right: 5px; z-index: 99999999;}
+.slideBox .btns li {float: left; margin-right: 5px; width: 18px; height: 18px; border: 0px solid #ccc; background: #666; text-align: center; font: 12px/20px arial;}
+.slideBox .btns li.current {background: #f33;}
+.slideBox .btns li a {text-decoration: none; display: block; color: #fff;}
